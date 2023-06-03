@@ -1,0 +1,81 @@
+@import "variable";
+
+* {
+  box-sizing: inherit;
+  // margin: 0;
+  // padding: 0;
+}
+
+html, body {
+  box-sizing: border-box;
+  font-family: 'Inter, sans-serif';
+  font-size: 62.5%;
+  background-color: $background;
+  // width: 1440px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  height: 44px;
+  min-width: 149px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: inherit;
+  padding: 8px 16px;
+
+  &--border {
+    border: 1px solid $primary;
+    border-radius: 8px;
+    color: $blue-text;
+    transition: linear .2s;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+
+  &--solid {
+    border-radius: 8px;
+    background-color: $primary;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    &:hover::before {
+      left: auto;
+      right: 0;
+      width: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: auto;
+      top: 0;
+      height: 100%;
+      width: 0;
+      background-color: #fff;
+      opacity: 0.1;
+      z-index: -1;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+}
+
+.wrapper {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto
+}
+
+.container {
+  padding-block: 40px;
+}

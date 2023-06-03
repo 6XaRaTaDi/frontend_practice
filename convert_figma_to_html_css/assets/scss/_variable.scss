@@ -1,6 +1,14 @@
 // color
-$color-primary: #021a84;
-$color-secondary: #FE4C4C;
+$primary: #021a84;
+$secondary: #FE4C4C;
 $color-text: #171717;
 $gray: #999999;
-$light-gray: #E5E5E5; 
+$light-gray: #e5e5e5;
+$green-text: #2ada66;
+$blue-text: #021a84;
+$red-text: #e5532a;
+$background: #E5E5E5;
+$green-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6), #2ada66);
+$purple-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6), #021a84);
+$red-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6), #e5532a);
+
